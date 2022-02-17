@@ -1,12 +1,11 @@
-
-
-
-
 img{
     max-width: 100%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72f52f13edfe8f7e6d1eec81b5eee64ee2fc803b
 #header{
     height: 90px;
     width: 100vw;
@@ -22,8 +21,11 @@ img{
     padding-right: 130px;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 72f52f13edfe8f7e6d1eec81b5eee64ee2fc803b
 #navi{
     display: block;
     position: fixed;
