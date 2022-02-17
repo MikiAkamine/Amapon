@@ -1,4 +1,11 @@
 
+
+
+img{
+    max-width: 100%;
+}
+
+
 .header{
     height: 90px;
     width: 100vw;
@@ -125,4 +132,85 @@
     opacity: .8;
     z-index: 10;
     cursor: pointer;
+}
+
+.inner{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content{
+    width: 23%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact{
+    color: white;
+    background-color: #121212;
+    padding: 50px 0;
+}
+
+#contact .sub-title{
+    color: white;
+}
+
+#contact .contact-text{
+    max-width: 1240px;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .contact-info p{
+    margin-bottom: 30px;
+}
+
+#contact .contact-info,
+#contact .contact-form{
+    width: 45%;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#contact .contact-form .button input{
+    width: 200px;
+    color: white;
+    background-color: #121212;
+    border: solid 1px white;
+    padding: 12px 0;
+    margin-bottom: 0;
+}
+
+#contact .contact-form .button input:hover{
+    color: #202020;
+    background-color: white;
 }
