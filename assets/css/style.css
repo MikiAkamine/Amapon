@@ -216,3 +216,31 @@ img{
     color: #202020;
     background-color: white;
 }
+
+
+
+
+
+
+
+/* ---------------------商品紹介ページ---------------------- */
+
+.product1{
+    width: 90%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.product1-img{
+    width: 45%;
+}
+
+.product1-text{
+    width: 45%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
