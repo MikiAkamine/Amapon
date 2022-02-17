@@ -7,23 +7,21 @@ img{
 }
 
 
-＃header{
+#header{
     height: 90px;
     width: 100vw;
     background-color: white;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
 }
-
 .header-left{
     padding-left: 40px;
 }
-
 .header-right{
     padding-right: 130px;
 }
+
 
 
 #navi{
