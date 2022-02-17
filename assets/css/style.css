@@ -3,7 +3,7 @@ img{
 }
 
 #header{
-    height: 90px;
+    height: 80px;
     width: 100vw;
     background-color: white;
     align-items: center;
@@ -16,7 +16,6 @@ img{
 .header-right{
     padding-right: 130px;
 }
-
 
 #navi{
     display: block;
