@@ -1,14 +1,15 @@
+img{
+    max-width: 100%;
+}
+
 #header{
-    height: 80px;
+    height: 90px;
     width: 100vw;
     background-color: white;
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
-
-
-
 
 .header-left{
     padding-left: 40px;
@@ -17,7 +18,6 @@
 .header-right{
     padding-right: 130px;
 }
-
 
 #navi{
     display: block;
@@ -154,7 +154,7 @@
 }
 
 .content{
-    width: 23%;
+    width: 24%;
 }
 
 
