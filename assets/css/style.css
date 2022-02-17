@@ -1,4 +1,7 @@
 
+<<<<<<< HEAD
+#header{
+=======
 
 
 img{
@@ -7,13 +10,27 @@ img{
 
 
 .header{
+>>>>>>> dcc3233a9e45a634047061dc795e2a9b8c5f2f45
     height: 90px;
     width: 100vw;
-    
-    display: flex;
-    justify-content: center;
+    background-color: white;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
 }
+
+.h1{
+
+}
+.header-left{
+    padding-left: 40px;
+}
+
+.header-right{
+    padding-right: 130px;
+}
+
 
 #navi{
     display: block;
