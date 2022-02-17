@@ -1,3 +1,6 @@
+
+/* font-family: 'Playfair Display', serif; */
+
 img{
     max-width: 100%;
 }
@@ -5,16 +8,67 @@ img{
 #header{
     height: 80px;
     width: 100vw;
-    background-color: white;
+    background-color: black;
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
+
+h1{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
 .header-left{
     padding-left: 40px;
+    padding-bottom: 8px;
 }
 .header-right{
-    padding-right: 130px;
+    padding-right: 120px;
+}
+
+#form1{
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    padding: 3px 10px;
+    border-radius: 5px;
+    height: 2.2em;
+    width: 250px;
+    overflow: hidden;
+    background: white;
+}
+#sbox{
+    border: none;
+    height: 2.0em;
+}
+
+#sbtn{
+    border: none;
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    border: none;
+    background: none;
+    color: black;
+    position: absolute;
+    height: 2.5em;
+    right: 8px;
+    top: -10px;
+    outline : none;
+}
+
+.use_icon {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    text-align: right;
+    padding-top: 5px;
 }
 
 #navi{
@@ -83,7 +137,7 @@ img{
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: #333;
+    background-color: white;
     border-radius: 4px;
     transition: all 0.5s;
 }
@@ -136,6 +190,11 @@ img{
     cursor: pointer;
 }
 
+.main-visual img{
+    width: 100vw;
+    height: 800px;
+}
+
 .inner{
     width: 90%;
     display: flex;
@@ -143,6 +202,13 @@ img{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding-top: 60px;
+}
+
+.inner-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding-bottom: 30px;
 }
 
 .product{
@@ -172,10 +238,15 @@ img{
     color: white;
     background-color: #121212;
     padding: 50px 0;
+    font-family: 'Playfair Display', serif;
 }
 
 #contact .sub-title{
     color: white;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 20px;
+
 }
 
 #contact .contact-text{
