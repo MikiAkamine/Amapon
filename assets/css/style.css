@@ -1,12 +1,25 @@
 
-.header{
+#header{
     height: 90px;
     width: 100vw;
-    
-    display: flex;
-    justify-content: center;
+    background-color: white;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
 }
+
+.h1{
+
+}
+.header-left{
+    padding-left: 40px;
+}
+
+.header-right{
+    padding-right: 130px;
+}
+
 
 #navi{
     display: block;
