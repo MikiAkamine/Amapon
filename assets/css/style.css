@@ -43,6 +43,7 @@ h1{
 }
 #sbox{
     border: none;
+    outline: none;
     height: 2.0em;
 }
 
@@ -53,7 +54,8 @@ h1{
     font-size: 1.3em;
     border: none;
     background: none;
-    color: black;
+    color: rgb(211, 211, 211);
+    font-weight: lighter;
     position: absolute;
     height: 2.5em;
     right: 8px;
@@ -93,6 +95,16 @@ h1{
 
 #navi a{
     color: white;
+    display: inline-block;
+    transition: .2s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#navi a:hover{
+    color: lightblue;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .open #navi{
@@ -119,6 +131,10 @@ h1{
 
 #navi ul.nav-sns li{
     padding: 5px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
 }
 
 .toggle_btn{
@@ -233,7 +249,17 @@ h1{
 }
 
 .content-text{
-    padding: 10% 0;
+    font-family: 'Playfair Display', serif;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.content-title{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.content-price{
+    font-size: 20px;
 }
 
 .content-img a{
