@@ -291,22 +291,49 @@ h1{
 
 .item{
     width: 300px;
-    height: 300px;
+    height: 400px;
     position: fixed;
     right: 20px;
-    bottom: -300px;
-    background: tomato;
-    color: #fff;
+    bottom: -400px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
     border-radius: 10px;
     transition: all .5s ease;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.item p{
+    margin: 5% auto;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .item.on{
-    bottom: 100px;
+    bottom: 50px;
 }
 
+.item-top{
+    overflow: hidden;
+    max-width: 100%;
+    background:  #000;
+    cursor: pointer;
+}
 
+.item-top img{
+    display: block;
+}
 
+.item-top a{
+    display: block;
+    transition-duration: 0.3s;
+}
+
+.item-top a:hover{
+    opacity: 0.6;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
 
 
 
@@ -411,9 +438,7 @@ h1{
     height: 100%;
   }
   
-  /* .swiper-pagination, .swiper-button-next, .swiper-button-prev{
-    : white;
-  } */
+  
 
   
 

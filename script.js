@@ -16,6 +16,8 @@
 // // -----------------------------------------
 
 
+	
+
 
   
 
@@ -64,11 +66,9 @@ $(function(){
     let now = $(window).scrollTop();
     if (now <= 300 || now > 2500) {
         item.removeClass("on")
-        console.log(now);
       } 
     else if (now > 300) {
       item.addClass("on")
-      console.log(now);
     } 
   });
   
