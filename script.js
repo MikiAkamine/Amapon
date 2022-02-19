@@ -2,6 +2,17 @@
 
 // ------------JavaScript-------------
 
+// let text = document.getElementById("name");
+// let placeholder = document.querySelectorAll(".contact-form placeholder");
+// console.log(placeholder);
+// let button = document.getElementsByClassName("btn-box");
+// button.addEventListener("click",function(){
+//   if(text.textContent == ""){
+//     placeholder.textContent = "未入力です";
+//   }
+  
+// })
+
 
 
 // --------------------------------------jQuery------------------------------------------------------
@@ -47,7 +58,7 @@ $(function(){
   });
   // ---------------------------------------------
 
-
+  
 
 
 
