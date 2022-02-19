@@ -533,13 +533,96 @@ h1{
   .swiper-slide {
     width: 100%;
     height: 100%;
-    
 }
 
 
-  
+/* ここからSENDページ */
+.send-inner{
+    padding-top: 15%;
+    padding-bottom: 5%;
+    font-family: 'Playfair Display', serif;
+    background-color: #121212;
+    color: white;
+}
+
+.send-top{
+    background-color: white;
+    width: 100%;
+    padding: 7% 0;
+}
+
+.send-title{
+    font-size: 50px;
+    color: #121212;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.send-bottom-inner{
+    padding: 5% 0;
+}
+
+.send-text{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 30px;
+}
   
 
+.button2{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: transparent;
+  }
   
+  .btn-box2{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    color: #55555570;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    position: relative;
+    border: 2px solid #55555570;
+    transition: .3s;
+  }
+  
+  .btn-box2:hover{
+    border: 2px solid transparent;
+    color: white;
+  }
+  
+  .btn-box2:before, .btn-box2:after{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: .3s;
+  }
+  
+  .btn-box2:before{
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transform-origin: 100% 0%;
+  }
+  
+  .btn-box2:after{
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform-origin: 0% 100%;
+  }
+  
+  .btn-box2:hover::after, .btn-box2:hover::before{
+    transform: scale(1);
+  }
 
 
