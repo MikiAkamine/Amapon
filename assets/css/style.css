@@ -208,9 +208,43 @@ h1{
     cursor: pointer;
 }
 
-.main-visual video{
+#video{
     width: 100vw;
-    height: 100vh;
+}
+
+.main-content{
+    position: relative;
+}
+
+.main-text{
+    position: absolute;
+    top: 0.5%;
+    left: 0;
+    width: 100vw;
+    display: none;
+    background-color: rgba(240, 239, 239, 0.5);
+}
+
+.main-text-inner{
+    margin: 20% auto;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-text-inner span{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.main-text-inner p{
+    font-size: 200px;
+    font-weight: bold;
+}
+
+.on{
+    display: block;
 }
 
 .inner{
@@ -297,7 +331,6 @@ h1{
     bottom: -400px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    border-radius: 10px;
     transition: all .5s ease;
     text-align: center;
     font-family: 'Playfair Display', serif;
@@ -335,26 +368,18 @@ h1{
     transition-duration: 0.3s;
 }
 
-
-
-
-
-
-
-
 #contact{
     color: white;
     background-color: #121212;
-    padding: 50px 0;
+    padding: 5% 0 1% 0;
     font-family: 'Playfair Display', serif;
 }
 
 #contact .sub-title{
     color: white;
     text-align: center;
-    font-size: 50px;
-    padding-bottom: 20px;
-
+    font-size: 40px;
+    padding-bottom: 3%;
 }
 
 #contact .contact-text{
@@ -366,7 +391,11 @@ h1{
 }
 
 #contact .contact-info p{
-    margin-bottom: 30px;
+    margin-bottom: 5%;
+}
+
+#contact dt{
+    padding-bottom: 1%;
 }
 
 #contact .contact-info,
@@ -383,20 +412,64 @@ h1{
     outline: none;
 }
 
-#contact .contact-form .button input{
-    width: 200px;
-    color: white;
-    background-color: #121212;
-    border: solid 1px white;
-    padding: 12px 0;
-    margin-bottom: 0;
+.copyright-text{
+    text-align: center;
 }
 
-#contact .contact-form .button input:hover{
-    color: #202020;
-    background-color: white;
-    transition: 1.2s;
-}
+.button{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: transparent;
+  }
+  
+  .btn-box{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    color: #55555570;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    position: relative;
+    border: 2px solid #55555570;
+    transition: .3s;
+  }
+  
+  .btn-box:hover{
+    border: 2px solid transparent;
+    color: white;
+  }
+  
+  .btn-box:before, .btn-box:after{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: .3s;
+  }
+  
+  .btn-box:before{
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transform-origin: 100% 0%;
+  }
+  
+  .btn-box:after{
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform-origin: 0% 100%;
+  }
+  
+  .btn-box:hover::after, .btn-box:hover::before{
+    transform: scale(1);
+  }
 
 
 

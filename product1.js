@@ -1,4 +1,6 @@
 
+// ---------------------------JavaScript-------------------------------------
+
 // ----------商品画像のスライド----------------
 const swiper = new Swiper(".swiper", { 
     pagination: {
@@ -13,8 +15,11 @@ const swiper = new Swiper(".swiper", {
 
 
 
+// --------------------------jQuery---------------------------------------
+
 $(function(){
 
+    // -------------ハンバーガーメニュー--------------
     $(".toggle_btn").on("click",function(){
         if($("#header").hasClass("open")){
             $("#header").removeClass("open");
@@ -28,15 +33,17 @@ $(function(){
     });
 
     $("#navi a").on("click",function(){
-        $("header").removeClass("open");
+        $("#header").removeClass("open");
     });
+// -----------------------------------------------
 
 
+// -----------商品画像のモーダル------------------
     $('.image').modaal({
         type: 'image'
     });
 
-
+// -----------------------------------------------
 
 
 
