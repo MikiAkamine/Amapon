@@ -583,7 +583,7 @@ h1{
     border: 3px solid #d6513a;
     border-radius: 10px;
   }
-  
+
   .button04 a::after {
     content: '';
     width: 5px;
