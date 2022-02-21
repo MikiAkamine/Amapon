@@ -606,7 +606,7 @@ h1{
   }
 
 
-/* ここからSENDページ */
+/* -------------ここからSENDページ-------------- */
 .send-inner{
     padding-top: 15%;
     padding-bottom: 5%;
@@ -740,6 +740,7 @@ h1{
     #header{
         flex-direction: column;
         padding: 5% 0;
+        height: 100px;
     }
 
     .header-left{
@@ -750,18 +751,52 @@ h1{
         padding-right: 0;
     }
 
+    #video, .main-text{
+        padding-top: 100px;
+    }
+
+    .main-text-inner p{
+        font-size: 30px;
+    }
+
+    .main-text-inner span{
+        font-size: 10px;
+    }
+
+    .content{
+        width: 90%;
+    }
+
+    .item{
+        width: 200px;
+        height: 290px;
+    }
 
     .contact-text{
         flex-direction: column;
         margin: 0 auto;
-        align-items: center;
-        justify-content: center;
+        /* align-items: center;  */
+        /* justify-content: center;  */
     }
 
     .contact-info iframe{
         width: 250px;
         height: 200px;
     }
+
+    .contact-info p{
+        width: 300px;
+    }
+
+    .contact-form dl{
+        width: 300px;
+    }
+
+    #contact{
+        width: 100%;
+        margin: 0 10%;
+    }
+    
 }
 
 @media screen and (min-width: 501px) and (max-width:767px){
@@ -769,6 +804,7 @@ h1{
     #header{
         flex-direction: column;
         padding: 5% 0;
+        height: 100px;
     }
 
     .header-right{
@@ -780,11 +816,20 @@ h1{
     }
 
     #video, .main-text{
-        padding-top: 139px;
+        padding-top: 100px;
     }
 
     .main-text-inner p{
         font-size: 60px;
+    }
+
+    .content{
+        width: 45%;
+    }
+
+    .item{
+        width: 200px;
+        height: 310px;
     }
 
     .contact-text{ 
@@ -819,9 +864,13 @@ h1{
         justify-content: center;
     }
 
+    .content{
+        width: 45%;
+    }
+
     .item{
-        width: 200px;
-        height: 300px;
+        width: 250px;
+        height: 375px;
     }
 
 }
@@ -830,20 +879,6 @@ h1{
     .main-text-inner p{
         font-size: 200px;
     }
-
-    .contact-text{
-        flex-direction: column;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contact-form{
-        margin-top: 5%;
-    }
-}
-
-@media screen and (min-width: 1241px){
 
     .contact-text{
         flex-direction: column;

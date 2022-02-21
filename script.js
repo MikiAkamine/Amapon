@@ -68,10 +68,8 @@ $(function(){
   });
   // -------------------------------------------
   
-  let test = $("#header").height();
-  console.log(test);
-
-
+  
+  
 
 
 
