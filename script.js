@@ -2,16 +2,7 @@
 
 // ------------JavaScript-------------
 
-// let text = document.getElementById("name");
-// let placeholder = document.querySelectorAll(".contact-form placeholder");
-// console.log(placeholder);
-// let button = document.getElementsByClassName("btn-box");
-// button.addEventListener("click",function(){
-//   if(text.textContent == ""){
-//     placeholder.textContent = "未入力です";
-//   }
-  
-// })
+ 
 
 
 
@@ -58,8 +49,27 @@ $(function(){
   });
   // ---------------------------------------------
 
-  
 
+// ------------コンタクト入力チェック--------------
+  $(".button").on("click",function(){
+    if($("#name").val() == ""){
+      $("#cation1").show();
+      $("#name").focus();
+      return false;
+    }else if($("#email").val() == ""){
+      $("#cation2").show();
+      $("#email").focus();
+      return false;
+    }else if($("#message").val() == ""){
+      $("#cation3").show();
+      $("#message").focus();
+      return false;
+    }
+  });
+  // -------------------------------------------
+  
+  let test = $("#header").height();
+  console.log(test);
 
 
 

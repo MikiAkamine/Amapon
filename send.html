@@ -8,11 +8,7 @@
     <script src="https://kit.fontawesome.com/c7f31e360f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap"
-        rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/3-2-3-1/css/3-2-3-1.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Amapon</title>
@@ -26,7 +22,7 @@
             </div>
             <div class="header-right">
                 <form id="form1" action="" autocomplete="off">
-                    <input id="sbox" id="s" name="s" type="text">
+                    <input id="sbox" id="s" name="s" type="text" placeholder="キーワードから探す">
                     <input id="sbtn" type="submit" class="use_icon" value="&#xf002">
                 </form>
                 <nav id="navi">
@@ -83,14 +79,17 @@
                         <form action="#">
                             <dl>
                                 <dt><label for="name">Name:</label></dt>
+                                <div id="cation1">※名前が未入力です。</div>
                                 <dd><input type="text" id="name" name="your-name" placeholder=""></dd>
                                 <dt><label for="email">Mail:</label></dt>
+                                <div id="cation2">※メールアドレスが未入力です。</div>
                                 <dd><input type="email" id="email" name="your-email" placeholder=""></dd>
                                 <dt><label for="message">Message:</label></dt>
+                                <div id="cation3">※内容が未入力です。</div>
                                 <dd><textarea name="your-message" id="message" placeholder=""></textarea></dd>
                             </dl>
                             <div class="button">
-                                <a href="#" class="btn-box"><span>SEND</span></a>
+                                <a href="./send.html" class="btn-box"><span>SEND</span></a>
                             </div>
                         </form>
                     </div>

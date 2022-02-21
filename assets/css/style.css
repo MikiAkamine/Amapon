@@ -369,12 +369,15 @@ h1{
     transition-duration: 0.3s;
 }
 
+.item-text{
+    margin: 0 auto;
+}
+
 .item-text .item-title{
     font-size: 13px;
 }
 
 .item-text .item-price{
-    /* -top: 0%; */
     font-size: 13px;
 }
 
@@ -400,8 +403,16 @@ h1{
     justify-content: space-between;
 }
 
+#contact .contact-info h4{
+    margin-bottom: 3%;
+}
+
 #contact .contact-info p{
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+}
+
+.contact-info iframe{
+    margin-top: 5%;
 }
 
 #contact dt{
@@ -486,6 +497,14 @@ h1{
     transform: scale(1);
   }
 
+  #cation1, #cation2, #cation3{
+      color: red;
+      font-weight: bold;
+      display: none;
+      padding: 1% 0;
+  }
+
+  
 
 
 
@@ -544,6 +563,47 @@ h1{
     width: 100%;
     height: 100%;
 }
+
+.button04{
+    padding-top: 10%;
+    float: left;
+}
+
+.button04 a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 200px;
+    text-decoration: none;
+    color: #c52801;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid #d6513a;
+    border-radius: 10px;
+  }
+  
+  .button04 a::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #c52801;
+    border-right: 3px solid #c52801;
+    transform: rotate(45deg);
+  }
+  
+  .button04 a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #d6513a;
+    transition: 1s;
+  }
+  
+  .button04 a:hover::after {
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+  }
 
 
 /* ここからSENDページ */
@@ -635,4 +695,165 @@ h1{
     transform: scale(1);
   }
 
+
+
+
+  .cart-inner{
+    padding-top: 15%;
+    padding-bottom: 5%;
+    font-family: 'Playfair Display', serif;
+    background-color: #121212;
+    color: white;
+}
+
+.cart-top{
+    background-color: red;
+    width: 100%;
+    padding: 7% 0;
+}
+
+.cart-title{
+    font-size: 50px;
+    color: #121212;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cart-bottom-inner{
+    padding: 5% 0;
+}
+
+.cart-text{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+
+    #header{
+        flex-direction: column;
+        padding: 5% 0;
+    }
+
+    .header-left{
+        padding-left: 0;
+    }
+
+    .header-right{
+        padding-right: 0;
+    }
+
+
+    .contact-text{
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info iframe{
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:767px){
+
+    #header{
+        flex-direction: column;
+        padding: 5% 0;
+    }
+
+    .header-right{
+        padding-right: 0;
+    }
+
+    .header-left{
+        padding-left: 0;
+    }
+
+    #video, .main-text{
+        padding-top: 139px;
+    }
+
+    .main-text-inner p{
+        font-size: 60px;
+    }
+
+    .contact-text{ 
+        flex-direction: column;
+        margin: auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-info iframe{
+        width: 350px;
+        height: 300px;
+    }
+
+    .contact-info{
+        max-width: 100%;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .main-text-inner p{
+        font-size: 120px;
+    }
+
+    .contact-text{
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item{
+        width: 200px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:1240px) {
+    .main-text-inner p{
+        font-size: 200px;
+    }
+
+    .contact-text{
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 1241px){
+
+    .contact-text{
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form{
+        margin-top: 5%;
+    }
+}
 
